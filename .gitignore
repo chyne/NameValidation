@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/packages
+/src/NameValidation/bin/Debug
+/src/NameValidation/obj/Debug
+/tests/NameValidationTests/bin/Debug
+/tests/NameValidationTests/obj/Debug
