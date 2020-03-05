@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace SampleRunner
@@ -9,7 +8,7 @@ namespace SampleRunner
     using NameValidation;
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var inputParser = new Parser();
             var registryParser = new RegistryParser();

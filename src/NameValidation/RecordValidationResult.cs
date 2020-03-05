@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace NameValidation
+﻿namespace NameValidation
 {
     using System;
     using System.Collections.Generic;

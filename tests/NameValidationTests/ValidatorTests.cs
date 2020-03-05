@@ -33,9 +33,6 @@
                 _parser.Parse("Bob M.", "Perry-Smith"),
                 _registryParser.Parse("C[ROBERT] [MICHAEL]", "C[PERRYSMITH] [ ] A[PERRY] [SMITH]"));
 
-            var given = result.BestGivenNameResults;
-            var surname = result.BestSurnameResult;
-
             Assert.IsNotNull(result);
         }
 
