@@ -11,7 +11,7 @@
         {
             return new InputRecord
             {
-                GivenNames = ParseGivenNames(givenNames),
+                GivenNames = ParseSurnames(givenNames),
                 Surnames = ParseSurnames(surnames)
             };
         }

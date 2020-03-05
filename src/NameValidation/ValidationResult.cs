@@ -11,7 +11,7 @@
         public NameType NameType { get; set; }
         public bool IsInitialMatch { get; set; }
 
-        public decimal Proximity => Math.Round((1 - decimal.Divide(Distance, NameFromRegistry.Length)) * 100, 2);
+        public decimal Proximity => NameFromRegistry == null || NameVariation == null ? 0 : Math.Round((1 - decimal.Divide(Distance, Math.Max(NameFromRegistry.Length, NameVariation.Length))) * 100, 2);
 
 
         public int CompareTo(ValidationResult other)

@@ -1,4 +1,6 @@
-﻿namespace NameValidation
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace NameValidation
 {
     using System;
     using System.Collections.Generic;
@@ -9,7 +11,7 @@
         public ICollection<ValidationResult> GivenNameResults { get; set; } = new List<ValidationResult>();
         public ICollection<ValidationResult> SurnameResults { get; set; } = new List<ValidationResult>();
 
-        public ValidationResult BestSurnameResult => SurnameResults.OrderBy(r => r.NameType).Max();
+        public ValidationResult BestSurnameResult => SurnameResults.OrderBy(r => r.NameType).Max() ?? new ValidationResult();
         public ICollection<ValidationResult> BestGivenNameResults => GivenNameResults.GroupBy(r => r.NameFromInput).Select(g => g.OrderBy(r => r.NameType).Max()).ToList();
 
         public decimal Score()
