@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\NameValidation\NameValidation.csproj">
+    <ProjectReference Include="..\NameValidation\NameValidation.csproj">
       <Project>{b04f1c84-7f7f-40e0-826f-0197addcc417}</Project>
       <Name>NameValidation</Name>
     </ProjectReference>
